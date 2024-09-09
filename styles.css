@@ -1,0 +1,145 @@
+/* 全体のベーススタイル */
+body {
+    font-family: 'Arial', sans-serif; /* 文字フォントの設定 */
+    background-color: #ffffff; /* 背景色: 白 */
+    color: #000000; /* テキスト色: 黒 */
+    margin: 0; /* ページ全体の余白をなくす */
+    padding: 0; /* ページ全体の内側の余白をなくす */
+    line-height: 1.6; /* テキストの行間を少し広げる */
+}
+
+/* ヘッダーとナビゲーションのスタイル */
+header {
+    background-color: #f8f6f6; /* ヘッダーの背景色: 白 */
+    padding: 20px 0; /* ヘッダー上下の余白を20px */
+    text-align: center; /* テキストを中央揃え */
+    color: #000000; /* ヘッダー内の文字色: 黒 */
+}
+
+header h1 {
+    margin: 0; /* 見出しの余白をなくす */
+    font-size: 2.5em; /* 見出しの文字サイズを大きくする */
+}
+
+nav ul {
+    list-style: none; /* リストのマーカーを消す */
+    padding: 0; /* リスト全体の内側の余白をなくす */
+}
+
+nav ul li {
+    display: inline; /* リスト項目を横並びにする */
+    margin: 0 15px; /* 各項目の間にスペースを空ける */
+}
+
+nav ul li a {
+    color: #f4569a; /* リンクの文字色: ピンク */
+    text-decoration: none; /* リンクの下線を消す */
+    font-size: 1.2em; /* リンクの文字サイズを少し大きくする */
+}
+
+nav ul li a:hover {
+    color: #b40606; /* ホバー時のリンク色: 深い赤 */
+}
+
+/* セクションのスタイル */
+section {
+    padding: 60px 20px; /* セクションの上下に60px、左右に20pxの余白 */
+    text-align: center; /* セクション内のテキストを中央揃え */
+}
+
+#about img {
+    width: 70%; /* 画像の幅をページの70%に設定 */
+    max-width: 800px; /* 画像の最大幅を800pxに設定 */
+    border-radius: 10px; /* 画像の角を丸める */
+    margin-top: 20px; /* 画像の上に20pxの余白を追加 */
+    border: 5px solid #b71c1c; /* 画像の周りに深い赤の枠線を追加 */
+}
+
+/* キャラクターセクションのスタイル */
+#characters {
+    background-color: #ffebee; /* 背景色: 淡い赤 */
+    color: #000000; /* テキスト色: 黒 */
+}
+
+.character {
+    margin: 40px auto; /* セクション全体の上下に40pxの余白、中央揃え */
+    padding: 20px; /* セクション内側に20pxの余白 */
+    background-color: #ffffff; /* セクションの背景色: 白 */
+    border-radius: 10px; /* セクションの角を丸める */
+    max-width: 600px; /* セクションの最大幅を600pxに設定 */
+    text-align: left; /* セクション内のテキストを左揃え */
+    border: 2px solid #b71c1c; /* セクションのボーダーに深い赤を設定 */
+}
+
+.character h3 {
+    margin-top: 0; /* 見出しの上部余白をなくす */
+    color: #b71c1c; /* 見出しの文字色: 深い赤 */
+}
+
+/* フッターセクションのスタイル */
+footer {
+    background-color: #b71c1c; /* フッターの背景色: 深い赤 */
+    padding: 40px 20px; /* フッターの上下に40px、左右に20pxの余白 */
+    text-align: center; /* フッター内のテキストを中央揃え */
+    color: #ffffff; /* フッターのテキスト色: 白 */
+}
+
+footer form {
+    background-color: #ffffff; /* フォームの背景色: 白 */
+    padding: 20px; /* フォーム内側に20pxの余白 */
+    border-radius: 10px; /* フォームの角を丸める */
+    display: inline-block; /* フォーム全体をブロック要素として中央揃え */
+    max-width: 400px; /* フォームの最大幅を400pxに設定 */
+    text-align: left; /* フォーム内のテキストを左揃え */
+    border: 2px solid #b71c1c; /* フォームのボーダーに深い赤を設定 */
+}
+
+footer label {
+    display: block; /* ラベルをブロック要素にする */
+    margin-bottom: 8px; /* ラベルと入力フィールドの間に余白を追加 */
+    font-weight: bold; /* ラベルの文字を太字にする */
+    color: #b71c1c; /* ラベルの文字色: 深い赤 */
+}
+
+footer input[type="text"], footer input[type="email"], footer textarea {
+    width: 100%; /* 入力フィールドの幅を100%に設定 */
+    padding: 10px; /* フィールド内側に10pxの余白 */
+    margin-bottom: 20px; /* 各フィールドの間に20pxの余白 */
+    border: 1px solid #b71c1c; /* フィールドのボーダーを深い赤に設定 */
+    border-radius: 4px; /* フィールドの角を丸める */
+    background-color: #ffebee; /* フィールドの背景色: 淡い赤 */
+    color: #000000; /* フィールド内の文字色: 黒 */
+}
+
+footer input[type="submit"] {
+    background-color: #b71c1c; /* 送信ボタンの背景色: 深い赤 */
+    color: #ffffff; /* 送信ボタンの文字色: 白 */
+    border: none; /* ボーダーをなくす */
+    padding: 10px 20px; /* ボタン内の余白を追加 */
+    cursor: pointer; /* ボタンにマウスポインタを当てた時にポインタを表示 */
+    border-radius: 4px; /* ボタンの角を丸める */
+}
+
+footer input[type="submit"]:hover {
+    background-color: #ff5252; /* ホバー時の背景色: 明るい赤 */
+}
+
+a {
+    color: #f50a70; /* リンクの文字色: ピンク */
+    text-decoration: none; /* リンクの下線を消す */
+    font-size: 1.2em; /* リンクの文字サイズを少し大きくする */
+}
+
+ a:hover {
+    color: #8f1616; /* ホバー時のリンク色: 暗い赤 */
+}
+
+ul {
+    list-style-type: none; /* リストマーカーを消す */
+    padding-left: 0; /* リスト全体の左側の余白をなくす */
+}
+
+.font_test{
+    font-size:60px; /*文字サイズ指定*/
+    color:#fb1c20; /*文字色指定*/
+  }/*タイトルのところの色指定*/
