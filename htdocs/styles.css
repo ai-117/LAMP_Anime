@@ -143,3 +143,11 @@ ul {
     font-size:60px; /*文字サイズ指定*/
     color:#fb1c20; /*文字色指定*/
   }/*タイトルのところの色指定*/
+
+  .font_broadcast{
+    font: size 50px;px; /*文字サイズ指定*/
+    color:#fb1c20; /*文字色指定*/
+    display: grid;
+    place-items: center; /* 横方向・縦方向両方の中央配置 */
+    /*height: 10vh;*/ /* ビューポートの高さに合わせる */
+}
