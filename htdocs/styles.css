@@ -149,5 +149,26 @@ ul {
     color:#fb1c20; /*文字色指定*/
     display: grid;
     place-items: center; /* 横方向・縦方向両方の中央配置 */
-    height: 10vh; /* ビューポートの高さに合わせる */
+    /*height: 10vh;*/ /* ビューポートの高さに合わせる */
+}
+
+.vertical-text {
+    writing-mode: vertical-rl; /* 右から左への縦書き */
+    padding: 10px; /* 内側の余白 */
+    text-align: center; /* テキストを中央に配置 */
+    line-height: 1.5; /* 行の高さを調整 */
+    font-size: 30px; /* 文字サイズを大きくする */
+}
+
+.character {
+    /*display: flex;*//*文字を横並びにする*/
+    place-items: center; /* 横方向・縦方向両方の中央配置 */
+    text-align: center; /* テキストの中央揃え */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* 横方向の中央配置 */
+    align-items: center; /* 縦方向の中央配置 */
+    height: 30vh; /* ビューポートの高さに合わせる */
 }
