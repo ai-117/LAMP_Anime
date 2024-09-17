@@ -41,6 +41,11 @@ nav ul li a:hover {
     color: #b40606; /* ホバー時のリンク色: 深い赤 */
 }
 
+li {
+    list-style-type: none; /* リストマーカーを非表示にする */
+    padding-left: 0;       /* 左側の余白も消す（必要に応じて） */
+ }
+
 /* セクションのスタイル */
 section {
     padding: 60px 20px; /* セクションの上下に60px、左右に20pxの余白 */
@@ -171,4 +176,26 @@ ul {
     justify-content: center; /* 横方向の中央配置 */
     align-items: center; /* 縦方向の中央配置 */
     height: 30vh; /* ビューポートの高さに合わせる */
+}
+
+
+.animated-title {/*アニメーション追加*/
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000000; /* 黒色 */
+    text-align: center;
+    margin-top: 100px;
+    animation: slideUpFadeIn 0.5s ease-out; /* スライドとフェードインを2秒で実行 */
+}
+
+/* スライドアップ＋フェードインアニメーション */
+@keyframes slideUpFadeIn {
+    0% {
+        transform: translateY(100px); /* 下からスライド */
+        opacity: 0; /* 透明 */
+    }
+    100% {
+        transform: translateY(0); /* 元の位置 */
+        opacity: 2; /* 完全に表示 */
+    }
 }
