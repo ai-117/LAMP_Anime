@@ -199,3 +199,14 @@ ul {
         opacity: 2; /* 完全に表示 */
     }
 }
+
+ul.vertical-list {
+    list-style-type: none; /* リストのデフォルトのマーカー（・）を消す */
+    padding-left: 0;       /* 左側の余白を削除 */
+  }
+  
+  ul.vertical-list li {
+    display: block;    /* リストの各項目を縦に並べる */
+    text-align: center; /* 文字を中央揃えにする */
+    margin-bottom: 5px; /* 項目間のスペース */
+  }
